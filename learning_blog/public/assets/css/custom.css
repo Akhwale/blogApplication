@@ -1,0 +1,24 @@
+.bg-blue{
+    background-color: #6699ff !important;
+}
+.navbar{
+    padding: 0px 0px !important;
+}
+.navbar-bar .nav-link{
+    color: #fff !important;
+    font-weight: 600;
+    border-right: 1px solid;
+    padding: 8px 18px;
+}
+.card-shadow{
+    box-shadow: 0 2px 8px 0 rgb(000/10%);
+}
+.blogs-heading{
+    padding: 10px 12px;
+    border-left: 6px soli #000;
+    background-color: #ddd;
+}
+.post-heading{
+    font-size: 26px;
+    color: #000;
+}

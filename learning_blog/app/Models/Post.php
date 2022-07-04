@@ -22,4 +22,9 @@ class Post extends Model
         'status',
         'created_by'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class,'created_by','id');
+    }
 }

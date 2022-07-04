@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Admin\PostFormRequest;
+use Illuminate\Support\Str;
+
 
 class PostController extends Controller
 {
@@ -27,7 +29,7 @@ class PostController extends Controller
 
         $post = new Post;
         $post->name = $data['name'];
-        $post->slug = $data['slug'];
+        $post->slug = Str::slug($data['slug']);
         $post->description = $data['description'];
         $post->yt_frame = $data['yt_frame'];
         $post->meta_title = $data['meta_title'];
@@ -52,7 +54,7 @@ class PostController extends Controller
 
         $post = Post::find($post_id);
         $post->name = $data['name'];
-        $post->slug = $data['slug'];
+        $post->slug = Str::slug($data['slug']);
         $post->description = $data['description'];
         $post->yt_frame = $data['yt_frame'];
         $post->meta_title = $data['meta_title'];
