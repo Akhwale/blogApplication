@@ -18,7 +18,7 @@
 
         <div class="card-header">
             <h4>Add post
-                <a href="{{url('admin/add-post')}}" class="btn btn-primary float-end">Create Post</a>
+                <a href="{{url('admin/dashboard')}}" class="btn btn-danger float-end">Back</a>
             </h4>
         </div>
         <div class="card-body">
