@@ -25,8 +25,8 @@
 
        <div class="card bg-primary" style="width: 16rem;">
         <div class="card-body text-center">
-          <h4 class="card-title text-center fw-bold text-dark"> Registered Users on Board</h4>
-          <p class="card-text text-white">Have a closer look at people closely following your blog feeds. You can give a few users the rights to make blogs too! </p>
+          <h4 class="card-title text-center fw-bold text-white"> Registered Users on Board</h4>
+          <p class="card-text text-dark">Have a closer look at people closely following your blog feeds. You can give a few users the rights to make blogs too! </p>
           <h1 class="card-text text-dark"> {{ $totalusers }} </h1>
           <a href="{{url('admin/users')}}" class="btn btn-warning text-light"  >View Users</a>
         </div>

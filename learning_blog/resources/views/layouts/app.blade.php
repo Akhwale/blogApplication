@@ -7,9 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    
+    <title>Class-Blogs</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,10 +16,12 @@
     <!-- Styles -->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+
 </head>
 <body>
     <div id="app">
-
         @include('layouts.inc.frontend-navbar')
 
         <main class="py-4">
@@ -32,6 +32,8 @@
     <!-- Scripts -->
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" defer></script>
-
 </body>
 </html>
+
+
+

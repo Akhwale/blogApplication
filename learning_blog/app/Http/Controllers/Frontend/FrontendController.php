@@ -18,4 +18,11 @@ class FrontendController extends Controller
         $posts = Post::all();
         return view('frontend.posts.index', compact('posts'));
     }
+
+    public function contactPage()
+    {
+        
+        return view('frontend.posts.contactpage');
+    }
+
 }
