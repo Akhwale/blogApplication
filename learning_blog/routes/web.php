@@ -13,6 +13,10 @@ Route::get('blogs', [App\Http\Controllers\Frontend\FrontendController::class, 'v
 Route::get('blogs/{slug}', [App\Http\Controllers\Frontend\FrontendController::class, 'viewBlog']);
 Route::get('contactUs', [App\Http\Controllers\Frontend\FrontendController::class, 'ContactPage']);
 
+//contacts route
+Route::post('contacts', [App\Http\Controllers\Frontend\ContactController::class, 'store']);
+
+
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
