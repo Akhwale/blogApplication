@@ -10,6 +10,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 Route::get('blogs', [App\Http\Controllers\Frontend\FrontendController::class, 'viewBlogs']);
+Route::get('blogs/{slug}', [App\Http\Controllers\Frontend\FrontendController::class, 'viewBlog']);
 
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 

@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section ('title')
+
+View Blogs
+
+@endsection
+
 @section('content')
 
 <div class="py-4">
@@ -8,7 +14,7 @@
             <div class="col-md-9">
             
             <div class="blogs-heading">
-                <h4>Our Blogs</h4>
+                <h4 class="mb-0">Our Blogs</h4>
             </div>
             @forelse($posts as $postItem)
             
