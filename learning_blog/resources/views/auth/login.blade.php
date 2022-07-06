@@ -69,5 +69,6 @@
             </div>
         </div>
     </div>
+    <h1 class="mt-3 mb-1 ms-1 pb-3 pt-5  text-center text-dark" ><i class="fa-solid fa-blog"></i>Class-Blogs</h1>
 </div>
 @endsection

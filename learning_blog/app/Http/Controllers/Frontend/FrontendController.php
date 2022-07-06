@@ -32,4 +32,11 @@ class FrontendController extends Controller
             return redirect ('/');
         }
     }
+
+    public function contactPage()
+    {
+        
+        return view('frontend.posts.contactpage');
+    }
+
 }
