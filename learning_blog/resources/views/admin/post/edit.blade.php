@@ -41,6 +41,10 @@
                     <textarea name="description" id="mysummernote" class="form-control" rows="4">{!! $post->description !!} </textarea>
                 </div>
                 <div class="mb-3">
+                    <label for="">Image</label>
+                    <input type='file' name="image" class="form-control" />
+                </div>
+                <div class="mb-3">
                     <label for="">Youtube I frame link</label>
                     <input type="text" name="yt_frame" value="{{$post->yt_frame}}" class="form-control"/>
                 </div>

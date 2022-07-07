@@ -22,7 +22,7 @@
             </h4>
         </div>
         <div class="card-body">
-            <form action="{{url('admin/add-post')}}" method="POST">
+            <form action="{{url('admin/add-post')}}" method="POST" enctype='multipart/form-data'>
                 @csrf
 
 
@@ -37,6 +37,10 @@
                 <div class="mb-3">
                     <label for="">Description</label>
                     <textarea name="description" id="mysummernote" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="">Image</label>
+                    <input type="file" name="image" class="form-control"/>
                 </div>
                 <div class="mb-3">
                     <label for="">Youtube I frame link</label>

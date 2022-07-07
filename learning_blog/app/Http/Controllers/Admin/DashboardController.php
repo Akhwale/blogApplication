@@ -12,7 +12,7 @@ class DashboardController extends Controller
     public function index()
     {
         $totalposts= Post::all()->count();
-        $totalusers= Post::all()->count();
+        $totalusers= User::all()->count();
 
         return view('Admin.dashboard',compact('totalposts','totalusers'));
     }

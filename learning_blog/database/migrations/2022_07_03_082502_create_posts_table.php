@@ -27,6 +27,7 @@ return new class extends Migration
 
             $table->tinyInteger('status')->default('0');
             $table->integer('created_by');
+            $table->string("image")->nullable();
             $table->timestamps();
         });
     }

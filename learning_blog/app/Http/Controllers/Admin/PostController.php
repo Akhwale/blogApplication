@@ -28,6 +28,16 @@ class PostController extends Controller
         $data = $request->validated();
 
         $post = new Post;
+
+        if($request->hasfile('image')){
+
+            $file=$request->file('image');
+            $filename=time().'.'.$file->getClientOriginalExtension();
+            $file->move('postimages',$filename);
+            
+            $post->image=$filename;
+        }
+
         $post->name = $data['name'];
         $post->slug = Str::slug($data['slug']);
         $post->description = $data['description'];
@@ -53,6 +63,15 @@ class PostController extends Controller
         $data = $request->validated();
 
         $post = Post::find($post_id);
+
+        if($request->hasfile('image')){
+
+            $file=$request->file('image');
+            $filename=time().'.'.$file->getClientOriginalExtension();
+            $file->move('postimages',$filename);
+            
+            $post->image=$filename;
+        }
         $post->name = $data['name'];
         $post->slug = Str::slug($data['slug']);
         $post->description = $data['description'];
@@ -62,7 +81,7 @@ class PostController extends Controller
         $post->meta_keyword = $data['meta_keyword'];
         $post->status = $request -> status == true? '1':'0';
         $post->created_by = Auth::user()->id;
-        $post->update();  
+        $post->save();  
         
         return redirect('admin/posts') -> with('message','Post Updated Successfuly!');
     }

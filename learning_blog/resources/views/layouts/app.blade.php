@@ -33,6 +33,12 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <section class="pb-0">
+            <div class="pt-3 pb-3 bg-black">
+              <h3 class="text-center text-light fw-bold">powered by ED <span style="color:darkblue"> 'N' </span>ELI</h3>
+            </div>
+        </section> 
     </div>
 
     <!-- Scripts -->
