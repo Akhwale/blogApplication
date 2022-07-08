@@ -26,12 +26,19 @@
                                 View Users
                             </a>
 
+                            <div class="sb-sidenav-menu-heading">Chat Panel</div>
+        
+                            <a class="nav-link " href="{{url('admin/chats')}}">
+                                <div class="sb-nav-link-icon text-warning "><i class="fa-solid fa-eye"></i></div>
+                                View Chats
+                            </a>
+
                             
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                       "To insert user name"
+                        {{ Auth::user()->name }}
                     </div>
                 </nav>
             </div>

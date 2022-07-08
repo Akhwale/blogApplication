@@ -34,21 +34,21 @@
                 @else
                 
                     <li>
-                        <a href="{{ url('home') }}" class="nav-link">Home</a>
+                        <a href="{{ url('home') }}" class="nav-link"><i class="fa-solid fa-house-chimney"></i> Home</a>
                     </li>
 
                     <li>
-                        <a href="{{url('blogs')}}" class="nav-link">Blogs</a>
+                        <a href="{{url('blogs')}}" class="nav-link"><i class="fa-brands fa-blogger"></i> Blogs</a>
                     </li>
 
                     <li>
-                         <a href="{{ url('contactUs') }}" class="nav-link">Contact Us</a>
+                         <a href="{{ url('contactUs') }}" class="nav-link"><i class="fa-solid fa-address-book"></i> Contact Us</a>
                     </li>
                     
                     <li class="nav-item dropdown">
  
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
+                            <i class="fa-solid fa-user"></i> {{ Auth::user()->name }}
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
